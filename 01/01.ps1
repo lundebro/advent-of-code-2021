@@ -1,4 +1,6 @@
 $data = Get-Content ./input.txt
+
+# part 1
 $largerThanPrevious = 0
 for ($i = 1; $i -lt $data.length; $i++) {
     if([int]$data[$i] -gt [int]$data[$i - 1]) {
@@ -7,6 +9,7 @@ for ($i = 1; $i -lt $data.length; $i++) {
 }
 $largerThanPrevious #1301
 
+# part 2
 $largerThankPrevious2 = 0
 for ($i = 2; $i -lt $data.length - 1; $i++) {
     $prev = [int]$data[$i - 2] + [int]$data[$i - 1] + [int]$data[$i]
