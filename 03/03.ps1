@@ -77,4 +77,4 @@ $scrubberRating = GetRowsWithMostCommonBits "leastCommon" $data 0
 $oxygenRating = [convert]::ToInt32($oxygenRating,2)
 $scrubberRating = [convert]::ToInt32($scrubberRating,2)
 
-$oxygenRating * $scrubberRating #3969000
+$oxygenRating * $scrubberRating #4267809
